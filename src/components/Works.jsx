@@ -4,8 +4,9 @@ import '../css/Works.css'
 function Works() {
   return (
     <div id="Works">
-      Works
-    </div>
+      <div className="container">
+        <p className="text-head">Works & education</p>
+      </div>    </div>
   )
 }
 

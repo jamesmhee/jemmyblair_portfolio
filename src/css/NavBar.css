@@ -12,11 +12,13 @@
 }
 
 .logo{
-    font-size: 2.5rem;
+    margin-left: 10px;
+    font-size: 2rem;
     font-weight: 600;
     color: var(--lightblue_2);
     cursor: pointer;
     transition: 0.5s ease-in-out;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .logo:hover{
@@ -87,6 +89,9 @@ li:hover{
 }
 
 @media (max-width: 680px) {  
+    .logo{
+        margin: 0;
+    }
     .hamburger{
         display: block;
         cursor: pointer;
