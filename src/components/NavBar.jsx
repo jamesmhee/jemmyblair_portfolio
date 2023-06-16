@@ -29,7 +29,7 @@ function NavBar() {
       <div className="navbar">
         <Link to="home" spy={true} smooth={true} offset={-170} duration={500} onClick={closeMobile}>
           <p className="logo">
-          JEMMY <RiBearSmileFill size={30}></RiBearSmileFill>
+          JEMMY <RiBearSmileFill id="bear-logo" size={30}></RiBearSmileFill>
           </p></Link>
         <ul className="menu" id="navbar-right">
           <li>

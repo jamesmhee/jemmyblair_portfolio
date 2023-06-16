@@ -11,6 +11,26 @@
     z-index: 99;
 }
 
+.navbar p{
+    position: relative;
+}
+
+.navbar p::before{
+    z-index: -1;
+    margin:0 182px;
+    margin-top: -10px;
+    content: "";
+    height: 100%;
+    position: absolute;
+    border: 25px solid var(--lightblue);
+    border-radius: 15px;
+    
+}
+
+#bear-logo{
+    color:white;
+}
+
 .logo{
     margin-left: 10px;
     font-size: 2rem;
@@ -89,6 +109,11 @@ li:hover{
 }
 
 @media (max-width: 680px) {  
+    .navbar p::before{
+        margin-top: -5px;  
+        height:100vh;      
+    }
+
     .logo{
         margin: 0;
     }
