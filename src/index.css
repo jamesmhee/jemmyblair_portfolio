@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Prompt", sans-serif;
+  text-decoration: none;
+}
+
+:root {
+  --lightblue: rgb(215, 227, 250);
+  --lightblue_2: rgb(187, 211, 255);
+}
+
+html {
+  scroll-behavior: smooth;
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+}
