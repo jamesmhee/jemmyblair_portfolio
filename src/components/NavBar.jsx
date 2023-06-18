@@ -38,12 +38,12 @@ function NavBar() {
             </Link>
           </li>
           <li>
-            <Link to="About" spy={true} smooth={true} offset={-80} duration={500} onClick={closeMobile}>
+            <Link to="About" spy={true} smooth={true} offset={-200} duration={500} onClick={closeMobile}>
               ABOUT
             </Link>
           </li>
           <li>
-            <Link to="Works" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMobile}>
+            <Link to="Works" spy={true} smooth={true} offset={-60} duration={500} onClick={closeMobile}>
               WORKS
             </Link>
           </li>
@@ -56,6 +56,7 @@ function NavBar() {
           <li className="hamburger" onClick={navReponsive}><GiHamburgerMenu></GiHamburgerMenu></li>
       </div>
       <Link
+        to=""
         spy={true}
         smooth={true}
         offset={0}

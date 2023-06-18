@@ -1,9 +1,10 @@
-.container{
+.container-works{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
     margin: 20px 0;
+    height: 100vh;
 }
 
 .text-head{

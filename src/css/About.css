@@ -1,17 +1,140 @@
-.container{
+.container-about{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    margin: 20px 0;
-    height: 100vh;
+    margin: 15vh 0;
+    height: 100%;
 }
 
-.text-head{
+#nameplate{
+    border: 2px solid black;
+    width: 80%;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.about-head{
+    margin-top: 2vh;
     text-align: center;
     text-transform: uppercase;
     text-decoration: underline;
     text-underline-offset: 10px;
     font-size: 2rem;
     font-weight: 500;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.about-des{
+    margin: 25px;
+    text-align: left;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.about-wrapper:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-wrapper:last-child{
+    padding: 12px 22px;
+    background-color: var(--lightblue);
+    width: 60%;
+    height: 200px;
+    border-radius: 220% 100% 220% 100%;
+
+}
+
+
+img[alt="arprofile"]{
+    width: 300px;
+}
+
+/* Font & Image Reponsive */
+
+@media (max-width: 1600px){
+    .about-head{
+        margin-top: 0vh;
+    }
+    .about-des::first-letter{
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 1000px){
+    .about-head{
+        margin-top: 0vh;
+        font-size: 1.8rem;
+    }
+    .about-des::first-letter{
+        margin-left: 50px;
+    }
+    .about-des{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px){
+    img[alt="arprofile"]{
+        width: 220px;
+    }
+    #nameplate{
+        font-size: 0.8rem;
+    }
+    .about-head{
+        font-size: 1.8rem;
+    }
+    .about-des{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 500px){
+    img[alt="arprofile"]{
+        width: 180px;
+    }
+    #nameplate{
+        font-size: 0.7rem;
+    }
+    .about-head{
+        font-size: 1.4rem;
+    }
+    .about-des{
+        font-size: 0.7rem;
+    }
+}
+
+
+@media (max-width: 480px){
+    img[alt="arprofile"]{
+        width: 170px;
+    }
+    #nameplate{
+        font-size: 0.7rem;
+    }
+    .about-head{
+        font-size: 1.35rem;
+    }
+    .about-des{
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 400px){
+    img[alt="arprofile"]{
+        width: 150px;
+    }
+    #nameplate{
+        font-size: 0.63rem;
+    }
+    .about-head{
+        font-size: 1rem;
+    }
+    .about-des{
+        font-size: 0.65rem;
+    }
 }
