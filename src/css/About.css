@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 15vh 0;
+    margin: 7vh 0;
     height: 100%;
 }
 
@@ -54,6 +54,81 @@ img[alt="arprofile"]{
     width: 300px;
 }
 
+/* Education style */
+.container-education{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 9vh 0;
+}
+
+.education-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 20rem;
+    flex-wrap: wrap;
+}
+
+.education-card:first-child{
+    width: 450px;
+    height: 400px;
+    border-radius: 20% 20% 10% 10%;
+    box-shadow:0px 0px 6px rgba(202, 202, 202, 0.5);
+    background-image: url('../assets/img/nd-logo.jpg');
+    background-position:center 290px;
+    background-repeat: no-repeat;
+    background-size: 20%;
+}
+
+.education-card:first-child::after{
+    content: "Wat Nuannoradit School";
+    color: white;
+    padding: 20px 127px;
+    position: relative;
+    top: 10px;
+    border-radius: 0 20px 20px 0;
+    background-color: rgb(140, 0, 255);
+}
+
+
+.education-card:last-child{
+    width: 450px;
+    height: 400px;
+    border-radius: 20% 20% 10% 10%;
+    box-shadow:0px 0px 6px rgba(202, 202, 202, 0.5);
+    background-image: url('../assets/img/kmitllogo.svg');
+    background-position:center 300px;
+    background-repeat: no-repeat;
+    background-size: 20%;
+}
+
+.education-card:last-child::after{
+    content: "King Mongkut's Institute of Technology Ladkrabang";
+    color: white;
+    padding: 20px 20px;
+    position: relative;
+    top: 10px;
+    border-radius: 0 20px 20px 0;
+    background-color: rgb(255, 145, 0);
+}
+
+.education-head{
+    text-decoration: dashed;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.education-text{
+    text-align: center;
+    margin: 30px 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
 /* Font & Image Reponsive */
 
 @media (max-width: 1600px){
@@ -63,6 +138,13 @@ img[alt="arprofile"]{
     .about-des::first-letter{
         margin-left: 50px;
     }
+    .education-wrapper{
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        flex-wrap: wrap;
+    }
+    
 }
 
 @media (max-width: 1000px){
@@ -75,7 +157,7 @@ img[alt="arprofile"]{
     }
     .about-des{
         font-size: 1rem;
-    }
+    }    
 }
 
 @media (max-width: 768px){
@@ -105,6 +187,40 @@ img[alt="arprofile"]{
     }
     .about-des{
         font-size: 0.7rem;
+    }
+    .education-card:first-child{
+        width: 400px;
+    }
+    .education-card:first-child::after{
+        content: "Wat Nuannoradit School";
+        color: white;
+        padding: 20px 100px;
+        position: relative;
+        top: 10px;
+        border-radius: 0 20px 20px 0;
+        background-color: rgb(140, 0, 255);
+    }
+    .education-head{
+        font-size: 1.8rem;
+    }
+    .education-card:last-child{
+        width: 400px;
+    }
+    .education-card:last-child::after{
+        content: "King Mongkut's Institute of Technology Ladkrabang";
+        color: white;
+        padding: 20px 12px;
+        position: relative;
+        top: 10px;
+        font-size: 0.9rem;
+        border-radius: 0 20px 20px 0;
+        background-color: rgb(255, 145, 0);
+    }
+    .education-head{
+        font-size: 1.8rem;
+    }
+    .education-text{
+        font-size: 1rem;
     }
 }
 
@@ -136,5 +252,36 @@ img[alt="arprofile"]{
     }
     .about-des{
         font-size: 0.65rem;
+    }
+    .education-card:first-child{
+        width: 360px;
+    }
+    .education-card:first-child::after{
+        content: "Wat Nuannoradit School";
+        color: white;
+        padding: 20px 80px;
+        position: relative;
+        top: 10px;
+        border-radius: 0 20px 20px 0;
+        background-color: rgb(140, 0, 255);
+    }
+    .education-card:last-child{
+        width: 360px;
+    }
+    .education-head{
+        font-size: 1.3rem;
+    }
+    .education-card:last-child::after{
+        content: "King Mongkut's Institute of Technology Ladkrabang";
+        color: white;
+        padding: 20px 4px;
+        position: relative;
+        top: 10px;
+        font-size: 0.85rem;
+        border-radius: 0 20px 20px 0;
+        background-color: rgb(255, 145, 0);
+    }
+    .education-text{
+        font-size: 1rem;
     }
 }

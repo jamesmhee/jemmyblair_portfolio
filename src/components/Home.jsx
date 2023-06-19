@@ -35,7 +35,7 @@ function Home() {
             </div>
           </div>
           <div className="items">
-            <Link to="About" spy={true} smooth={true} offset={-185} duration={500}>               
+            <Link to="About" spy={true} smooth={true} offset={-150} duration={500}>               
               <IoIosArrowDown className="button-down bounce" />
             </Link>
           </div>

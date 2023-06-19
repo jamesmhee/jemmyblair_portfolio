@@ -28,7 +28,8 @@
 }
 
 .items:nth-of-type(2) {
-  min-width: 500px;
+  position: absolute;
+  bottom: 100px;
 }
 
 .text-intro:first-child {

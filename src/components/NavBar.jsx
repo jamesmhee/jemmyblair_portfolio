@@ -38,7 +38,7 @@ function NavBar() {
             </Link>
           </li>
           <li>
-            <Link to="About" spy={true} smooth={true} offset={-200} duration={500} onClick={closeMobile}>
+            <Link to="About" spy={true} smooth={true} offset={-150} duration={500} onClick={closeMobile}>
               ABOUT
             </Link>
           </li>
