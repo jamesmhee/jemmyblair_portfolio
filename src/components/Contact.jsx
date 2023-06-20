@@ -28,15 +28,15 @@ function Contact() {
 
   const handleSubmit = () => {
     const button = document.getElementById("tellme-button");
-    const subject = document.forms["Form"]["sender-subject"].value;
-    const name = document.forms["Form"]["sender-name"].value;
-    const email = document.forms["Form"]["sender-email"].value;
-    const message = document.forms["Form"]["sender-message"].value;
+    const subject = document.forms["Form"]["sender-subject"].value; // pull value from form field
+    const name = document.forms["Form"]["sender-name"].value; // pull value from form field
+    const email = document.forms["Form"]["sender-email"].value; // pull value from form field
+    const message = document.forms["Form"]["sender-message"].value; // pull value from form field
     if (
-      button.value === "Tell me" &&
-      subject != "" &&
-      email != "" &&
-      message != ""
+      button.value === "Tell me" && // Check ค่า must not null
+      subject != "" && // Check ค่า must not null
+      email != "" && // Check ค่า must not null
+      message != "" // Check ค่า must not null
     ) {
       button.innerHTML =
         '<i class="fa fa-spinner fa-spin" style="font-size:24px;color:var(--lightblue)"></i>';
