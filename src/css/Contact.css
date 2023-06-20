@@ -1,17 +1,116 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    margin: 20px 0;
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 100px;
+  margin: 20px 0 0 0;
+  gap: 5vw;
+  height: 100%;
+  background-color: var(--lightblue);
+  border-radius: 10% 10% 0 0;
+  box-shadow: 0px 0px 8px rgb(221, 221, 221);
 }
 
-.text-head{
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-head {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: var(--press);
+  margin:0 0 20px 0;
+}
+
+a {
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: 0.5s ease-in-out;
+  color: black;
+}
+
+a:hover{
+  font-size: 1.2rem;
+  transition: 0.5s ease-in-out;
+  color: var(--cornblue);
+}
+
+#tellme-button {
+  color: black;
+  width: 200px;
+  height: 60px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px 0;
+  position: relative;
+  border: none;
+  font-size: 0.8rem;
+  font-family: var(--press);
+  transition: 0.5s ease-in-out;
+  position: relative;
+  left: 25%;
+}
+
+#tellme-button:hover{
+  color: white;
+  background-color: black;
+  transition: 0.5s ease-in-out;
+}
+
+.sendmessage-box{
+  border-radius: 5px 50px 5px;
+  background-color: rgb(255, 216, 133);
+  padding: 20px;
+}
+
+.input-text{
+  font-family: var(--press);
+  font-size: 0.8rem;
+  color: black;  
+}
+
+.input{
+  font-family: var(--press);
+  margin: 20px;
+  font-size: 0.8rem;
+  width: 300px;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  border-bottom: 3px dotted black;
+  border-radius: 0px;
+}
+
+@media (max-width: 1200px) and (min-width: 200px){
+  hr{
+    display: none;
+  }
+  a{
     text-align: center;
-    text-transform: uppercase;
-    text-decoration: underline;
-    text-underline-offset: 10px;
-    font-size: 2rem;
-    font-weight: 500;
+  }
+}
+
+@media (max-width: 500px) and (min-width: 320px){
+  .sendmessage-box{
+    border-radius: 5px 50px 5px;
+    background-color: rgb(255, 216, 133);
+    padding: 20px;
+    width: 280px;
+  }
+  .input{
+    width: 200px;
+  }
+  .contact-container{
+    border-radius: 50px 50px 0px 0px;
+  }
+  #tellme-button{
+    left: 15%;
+  }
 }

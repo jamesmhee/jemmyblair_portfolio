@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 .wrapper {
+  z-index: 99;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +24,7 @@
 }
 
 .items {
-  margin-top: -30vh;
+  margin-top: -42vh;
   max-width: max-content;
 }
 

@@ -24,7 +24,7 @@
     text-underline-offset: 10px;
     font-size: 2rem;
     font-weight: 500;
-    font-family: 'Press Start 2P', cursive;
+    font-family: var(--press);
 }
 
 .about-des{
@@ -42,7 +42,8 @@
 
 .about-wrapper:last-child{
     padding: 12px 22px;
-    background-color: var(--lightblue);
+    background-color: var(--yellow);
+    box-shadow: 0px 0px 8px rgba(202, 202, 202, 0.7);
     width: 60%;
     height: 200px;
     border-radius: 220% 100% 220% 100%;
@@ -118,7 +119,7 @@ img[alt="arprofile"]{
     font-size: 36px;
     text-align: center;
     margin-top: 30px;
-    font-family: 'Press Start 2P', cursive;
+    font-family: var(--press);
 }
 
 .education-text{

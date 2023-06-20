@@ -38,7 +38,7 @@
     color: var(--lightblue_2);
     cursor: pointer;
     transition: 0.5s ease-in-out;
-    font-family: 'Press Start 2P', cursive;
+    font-family: var(--press);
 }
 
 .logo:hover{
@@ -57,7 +57,7 @@ li{
     list-style: none;
     font-size: 1.2rem;
     font-weight: 500;
-    color: black;
+    color: rgb(63, 63, 63);
     transition: 0.5s ease-in-out;
     padding: 20px;
     border-radius: 30% 30% 30% 30%;
@@ -87,6 +87,7 @@ li:hover{
     bottom: 20px;
     width: 50px;
     height: 50px;
+    z-index: 1;
 }
 
 .totop:hover{
